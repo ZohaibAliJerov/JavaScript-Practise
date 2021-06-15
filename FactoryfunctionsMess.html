@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Factory function with parameters and mess...</title>
+</head>
+
+<body>
+    <script>
+        //factory function with parameters
+
+        function game(name) {
+            return {
+
+                gname:name,
+                year: function () {
+                    return ("2018");
+
+                }
+            };
+        }
+        var GTA = game('vice city');
+        var IGI = game('IGI 2 cover strike');
+        document.write(GTA.gname + " " + GTA.year() + "<br>" + IGI.gname);
+        document.write(IGI.year());
+
+    </script>
+
+</body>
+
+</html>

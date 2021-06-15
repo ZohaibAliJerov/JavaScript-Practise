@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Foor In Loop </title>
+</head>
+
+<body>
+    <script>
+        //Foor In Loop 
+        // for in loop and factory function
+        function mobile(model_no) {
+
+            this.model = model_no;
+            this.color = 'white';
+            this.ram = '4gb';
+            this.price = function(){
+                document.write(this.model + "price is RS 3000");
+            };
+            
+        }
+        //Constructor
+        var samsang = new mobile('galaxy');
+        var nokia = new mobile('1110');
+
+        // for in loop
+
+        for(var specs in nokia){
+            document.write(nokia[specs] + "<br>");
+
+        }
+    </script>
+
+</body>
+
+</html>

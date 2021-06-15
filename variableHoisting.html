@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Variable Hoisting</title>
+</head>
+
+<body>
+<script>
+    var a= 10;
+    document.write(a + " "+ b + "<br>")
+    var b = 20;
+
+    //  the js will read code like this
+    //  var a;
+    //  var b;
+    //  a = 10;
+    // document.write(a + " "+ b + "<br>")
+    // b = 20;
+    //so var b will show an error or it become undefined
+
+
+    var a= 10;
+    document.write(a + " "+ b + "<br>")
+    var b = 20;
+    document.write(a + " "+ b + "<br>") //this will show both a,b
+
+
+
+    //if we write code like follow,the js will hoist the variables
+    //and execute,so thats why the follow code will be correct
+    //and will work properly
+
+    f = 50;
+    document.write(f);
+    var f;
+
+    
+     
+</script>
+</body>
+
+</html>

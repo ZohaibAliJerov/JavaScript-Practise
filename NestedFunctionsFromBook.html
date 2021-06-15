@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun1() {
+            var firstVari = "my first variable";
+
+            function fun2() {
+                var secondVari = "my second variable";
+                console.log(firstVari); //correct
+                console.log(secondVari);//correct
+
+
+            }
+            // console.log(firstVari);//incorrect
+            console.log(secondtVari);//correct
+
+        }
+        // console.log(firstVari);//incorrect
+        // console.log(secondVari);//incorrect
+
+
+        // Another program defining scope for variables in functions
+
+        var a = "hello";
+        function foo() {
+            var b = "world";
+            function bar() {
+                var c = "hey";
+
+                console.log(a);//correct
+                console.log(b);//correct
+                console.log(c);//correct
+                console.log(d);//incorrect
+
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

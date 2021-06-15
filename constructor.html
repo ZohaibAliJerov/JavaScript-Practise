@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Constructor</title>
+</head>
+
+<body>
+    <script>
+        
+        function mobile() {
+            this.model = 'galaxy';
+            this.price = function() {
+                document.write(this.model +  "pirce Rs 3000");
+                
+            }
+            
+        }
+        //creating constructor by new method
+        var samsang = new mobile();
+        samsang.price();
+    </script>
+
+</body>
+
+</html>

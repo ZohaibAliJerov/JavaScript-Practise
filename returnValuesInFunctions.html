@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+<script>
+    // calculating total anfd percentage by using return values 
+    function sum(maths,eng,sc){
+        var add = maths +eng+sc;
+        return add;
+        
+    }
+
+    function percentage(obtainMarks){
+        var per = obtainMarks/300*100
+        document.write("percentage is"+ " "+ per);    
+
+    }
+    var total = sum(100,90,70);
+    document.write("total marks are :" + " " + total);
+    document.write("<br>");
+
+    percentage(total);
+
+    // //returning number values in functions.
+    // function subtract(num1,num2){
+    //     var subresult = num1 - num2;
+    //     return subresult;
+    // }
+    // var result = subtract(10,4);
+    // document.write(result);
+
+
+         //returning string values in functions
+
+
+    // function display(fname,lname){
+    //     var tname = fname + lname;
+    //     return tname;
+    // }
+    // var res = display("harami","hacker");
+    // document.write(res);
+
+</script>
+
+<body>
+
+</body>
+
+</html>

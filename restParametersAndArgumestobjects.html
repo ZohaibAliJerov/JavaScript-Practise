@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function show(a,...args){
+            console.log(a);
+            console.log(args);
+        }
+        show(10,20,30,40,50);//value 10 assign to variable a,and
+        //other values assign to ...args
+
+        function display(a){
+            console.log(a);
+            console.log(arguments);
+        }
+        display(10,20,30,40,50);//value 10 assign to variablee a but
+        //still the arguments hold all values.
+    </script>
+
+</body>
+
+</html>

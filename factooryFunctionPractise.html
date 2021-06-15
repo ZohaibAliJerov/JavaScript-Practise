@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Factory function practise</title>
+</head>
+
+<body>
+    <script>
+        //Factory Function
+        //Function which returns an object is called factory function.
+        function laptop(fullname){
+            return{
+                name:fullname,
+                ram :function(){
+                    return "ram is 8GB";
+                }
+            };
+        }
+        
+        var HP = laptop('HP Laptop' + " ");
+        document.write(HP.name + HP.ram() + "<br>");
+        var Acer = laptop('Acer laptop' + " ");
+        document.write(Acer.name + Acer.ram());
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Returning Anonymous Function in javan script</title>
+</head>
+
+<body>
+    <script>
+        function add(a){
+            return function(b){
+                return a+b;
+
+            };
+        }
+        var af = add(10);
+        document.write(af(20));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Block Scope</title>
+</head>
+
+<body>
+    <script>
+
+        // this is block scope 
+        //easy one
+        if (true) {
+            var i = 10; //global variable in this ccase,
+            //if we create variable with var in block
+            document.write(i);
+        }
+        document.write(i);
+
+        // it become local variable when we create a variable
+        // with let in scope
+
+
+        if (true) {
+            let j = 10; //global variable in this ccase,
+            //if we create variable with var in block
+            document.write(j);
+        }
+        document.write(j);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

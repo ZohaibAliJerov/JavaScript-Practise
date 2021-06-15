@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Factory Function With parameters</title>
+</head>
+
+<body>
+    <script>
+        //Factory Function With parameters
+        function mobile(model_no) {
+            return{
+                model: model_no,
+                price: function(){
+                    return "pirce Rs.3000"
+                }
+            };
+            
+        }
+        var samsang = mobile('galaxy');
+        var nokia = mobile('1110');
+        document.write(samsang.model + " " + samsang.price() + "<br>");
+        document.write(nokia.model + " " + nokia.price() + "<br>");
+
+    </script>
+
+</body>
+
+</html>

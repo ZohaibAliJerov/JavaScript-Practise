@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Factory Functions</title>
+</head>
+
+<body>
+    <script>
+        //factory function
+        //returning an object
+        function mobile() {
+            return {
+                model: 'galaxy',
+                price: function () {
+                    return "price RS.3000";
+
+                }
+            };
+
+
+        }
+        var samsang = mobile();
+        var lg = mobile();
+        document.write(samsang.model + " " + samsang.price());
+        document.write(lg.model + " " + lg.price());
+
+
+    </script>
+
+</body>
+
+</html>

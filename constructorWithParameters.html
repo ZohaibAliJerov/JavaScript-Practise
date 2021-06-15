@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Constructor With parameters </title>
+</head>
+
+<body>
+    <script>
+        function mobile(model_no) {
+            this.model = model_no;
+            this.price = function () {
+                document.write(this.model + "" + "price RS 3000");
+                
+            };
+            
+        }
+        //passing parameters with constructor
+        var samsamg = new mobile('galaxy');
+        var nokia = new mobile('1110');
+        samsamg.price();
+        nokia.price();
+    </script>
+
+</body>
+
+</html>

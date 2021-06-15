@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Closuer</title>
+</head>
+
+<body>
+    <script>
+        // outer variables can be accessible to inside a function
+        //this is aslo called closure
+        //and it has another diffinition and example,,
+
+
+
+        // var a = 10;
+        // function closure(){
+        //     var b = 20;
+        //     document.write(b + "<br>");
+        //     document.write(a);
+
+        // }
+        // closure();
+
+
+        //the second defifnition an example is follow.
+        function outerFunction(){
+            var a = " a variable of outer function";
+            document.write(a + "<br>");
+
+            function innerFunction(){
+                var b = "b variable of inner function";
+            document.write(b + "<br>");
+            document.write(a + "<br>"); //it will be axecuted because 
+            //inner function can access variables of outer functions
+            //but outer function cannot access inner function variables,
+            //this is called closure ahahahahaha
+            
+
+
+            }
+            innerFunction();
+        }
+        outerFunction();
+
+
+    </script>
+</body>
+
+</html>

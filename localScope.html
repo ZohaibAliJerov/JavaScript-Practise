@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>local scope</title>
+</head>
+
+<body>
+    
+    <script>
+        
+        //local scope,local variable
+        // function show(){
+        //     var a = "i am local variable";
+        //     document.write(a);
+        // }
+        // show();
+        // // document.write(a); we cannot access local variable
+        // //outside funcction
+
+        // a = "ali";
+        // document.write(a);
+        // console.log(typeOf(a));
+
+        function display(){
+            s= 2;
+            // j = "i am global variable inside function";
+            document.write(s + "<br>");
+        //     console.log(typeOf j);
+        //    return "saeed"
+            
+        }
+        display();
+        document.write(s);
+        
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>passing anonymous function as argument</title>
+</head>
+
+<body>
+    <script>
+        //we can pass anonymous function in argument
+        //but we have to put circuller parenthesis after
+        //the variable name of anonymous function
+        function display(myFunction) {
+            return myFunction();//here we have to put parenthesis after
+            //namme of variable
+        }
+        document.write(display(function () {
+            return "this is anonymous function passes as argument in a function"
+        }));
+    </script>
+
+</body>
+
+</html>

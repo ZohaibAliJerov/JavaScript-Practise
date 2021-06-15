@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Difference btw Arrow Functions,function expressions and Aaanonymous functions</title>
+</head>
+
+<body>
+    <script>
+        //Difference btw function expression, anonymous function and 
+        //arrow function.
+
+
+
+        //Function Expression
+
+        var myFun = function show() {
+            document.write("hahahahha Function expression" + "<br>");
+        };
+        myFun();
+
+        //Anonymous Function
+        var myFun2 = function () {
+            document.write("hahahahha Anonymous Function" + "<br>");
+        };
+        myFun2();
+
+        //Arrow function
+        var myFun3 = () => {
+            document.write("hahahahha arrow Function" + "<br>");
+
+        };
+        myFun3();
+
+        // Arrow function with parameters
+        var myFun4 = (a) => {
+            document.write(a + "<br>");
+
+        };
+        myFun4(10);
+
+        //if we pass 1 parameter the we can remove parenthesis
+        var myFun5 = b => {
+            document.write(b + "<br>");
+
+        };
+        myFun5(20);
+
+        //if we pass more than 2 parameters the we have to put 
+        //parenthesis 
+        var myFun6 = (a, b) => {
+            document.write(a + " " + b + "<br>");
+
+        };
+        myFun6(40, 50);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

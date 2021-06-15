@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arguments object</title>
+</head>
+<body>
+    <script>
+        function display(name,name2,name3){
+            for(var i = 0; i<arguments.length; i++){
+                document.write(arguments[i] + "<br>");
+            }
+
+
+            // document.write(arguments.length);
+            // document.write(name,name2);
+            // document.write(arguments[0],arguments[1]);
+        }
+        display("Javascript is amazing","hello everyone","hahaha");
+    </script>
+    
+</body>
+</html>
